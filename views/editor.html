@@ -1,0 +1,75 @@
+
+<html>
+
+<head>
+    
+	<meta charset='UTF-8'> <!-- para que funcionen las estrellas -->
+       
+  
+    
+   
+  <title></title>
+</head>
+<body onload='onload()' style='position: absolute; padding:0; margin:0; height: 100%; width:100%'>
+
+
+        <div id="dialogoverlay"></div>
+        <div id="dialogbox">
+            <div>
+                <div id="dialogboxhead"></div>
+                <div id="dialogboxbody"></div>
+                <div id="dialogboxfoot"></div>
+            </div>
+        </div>
+
+
+<div id="game">
+	
+	
+	
+	
+	<div id="userDiv">
+		<img  id="user" class="profilePicture" ></img>
+		<label id="user_name" class="profileText">Name:</label>
+		<label id="user_ranking" class="rating">☆☆☆☆☆</label>
+		<label id="user_estado" class="profileText">Online</label>
+	</div>
+	
+	<div id="enemyDiv">
+		<img  id="enemy"  class="profilePicture" ></img>
+		<label id="enemy_name" class="profileText">Name:</label>
+		<label id="enemy_ranking" class="rating">☆☆☆☆☆</label>
+		<label id="enemy_estado" class="profileText">Online</label>
+	</div>	
+	
+	<label id="tiempoPartida" class="profileText">Tiempo 00:00</label>
+	<img  id="buttonReady" ></img>
+	<canvas id="canvas" width=402 height=402 >></canvas>
+	<img  id="arrow"  ></img>
+	<canvas id="canvas2" width=401 height=402></canvas>
+	<div id="barcos">
+			
+	</div>
+	
+
+	<img  id="buttonReorder" ></img>
+
+
+	
+	<textarea readonly id="messages"rows="4" cols="50">
+	</textarea>
+	<input id="enemigoID" autocomplete="off" /><label id="enemigoIDL">Id enemigo</label>
+    <input id="m" autocomplete="off" /><button onclick="sendData()">Send</button>
+	
+	
+</div>
+
+      
+
+</body>
+<script src="javascripts/jquery.min.js"></script>
+         <script src="/socket.io/socket.io.js"></script>
+         <script src="javascripts/editor.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ 
+</html>
